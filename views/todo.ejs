@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Todo List APP test</title>
+        <title>Daily Tasks Remainder</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
             }
 
             h1 {
-                background-color: #4CAF50;
+                background-color: #c14eea;
                 color: white;
                 margin: 0;
                 padding: 20px;
@@ -39,7 +39,7 @@
             }
 
             ul li a:hover {
-                color: #4CAF50;
+                color: #f0f427;
             }
 
             .delete-btn {
@@ -57,7 +57,7 @@
             }
 
             form {
-                background: #fff;
+                background: #8946f6;
                 padding: 20px;
                 margin-top: 20px;
             }
@@ -71,25 +71,26 @@
                 width: 100%;
                 padding: 10px;
                 margin-bottom: 10px;
-                border: 1px solid #ddd;
+                border: 1px solid #6b27cb;
             }
 
             input[type="submit"] {
-                background-color: #4CAF50;
-                color: white;
+                background-color: #f8f82c;
+                color: rgb(0, 0, 0);
                 border: none;
                 padding: 10px 20px;
                 cursor: pointer;
             }
 
             input[type="submit"]:hover {
-                background-color: #45a049;
+                background-color: #ffa704;
             }
         </style>
     </head>
 
     <body>
-        <h1>Todo List - Made for Batch 7</h1>
+        <h1>Daily Tasks Remainder</h1>
+        <p>Test Project by Atishay</p>
         <ul>
             <% todolist.forEach(function(todo, index) { %>
             <li>
@@ -102,7 +103,7 @@
 
         <form action="/todo/add/" method="post">
             <p>
-                <label for="newtodo">What should I do?</label>
+                <label for="newtodo">Enter Your Tasks</label>
                 <input type="text" name="newtodo" id="newtodo" autofocus />
                 <input type="submit" value="Add" />
             </p>
